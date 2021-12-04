@@ -1,0 +1,17 @@
+.menu-item{
+   
+    position: relative;
+    
+}
+.menu-item:hover::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #efd3b3 ;
+    bottom: 0;
+    left: 0px;  
+    
+}
+.menu-item:active{
+    color: #efd3b3;
+}

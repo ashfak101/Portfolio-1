@@ -1,6 +1,8 @@
 import React,{useEffect, useState} from 'react';
 import Dropdown from '../Shared/Dropdown/Dropdown';
 import Navbar from '../Shared/Navbar/Navbar';
+import AboutMe from './AboutMe/AboutMe';
+import Banner from './Banner/Banner';
 
 
 const Home = () => {
@@ -28,6 +30,8 @@ const Home = () => {
            <Dropdown isOpen={isOpen}
            toggle={toggle}
            />
+           <Banner/>
+           <AboutMe/>
         </div>
     );
 };

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.img-i{
+  margin-top: -70px;
+  height: 600px;
+}
+@media only screen and (max-width: 600px) {
+  .img-i {margin-top: 50px;}
+}
