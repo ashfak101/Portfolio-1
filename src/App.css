@@ -43,3 +43,25 @@
 @media only screen and (max-width: 600px) {
   .img-i {margin-top: 50px;}
 }
+/* About */
+.about{
+  position: relative;
+}
+.about::before{
+  content:'' ;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff;
+  left: -60px;
+  top: 10px;
+}
+.about::after{
+  content:'' ;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff;
+  right:  -60px;
+  top: 10px;
+}

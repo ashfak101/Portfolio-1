@@ -6,7 +6,8 @@ module.exports = {
       primary:'#030303',
       secondary:'#FFFFFF',
      
-      main:'#efd3b3 '
+      main:'#efd3b3 ',
+      mainText:'#C5C4C4'
     },
     extend: {
       
