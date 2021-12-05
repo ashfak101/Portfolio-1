@@ -17,7 +17,7 @@ const Navbar = ({toggle}) => {
                 </div>
                 <div className="   md:block hidden  cursor-default" >
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out " to="/invoices">HOME</Link>
-                        <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">ABOUT ME</Link>
+                        <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">ABOUT</Link>
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">CONTACT</Link>
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">PROJECT</Link>
                 </div>

@@ -37,7 +37,7 @@ const AboutMe = () => {
                        <div className=" flex mt-16">
                              <a className="border-2 hover:delay-150 font-sans rounded-lg text-secondary md:text-xl font-bold  px-4  py-2 mr-4
                              hover:bg-secondary hover:text-primary 
-                            " href="../../../Images/Resume of Ashfakul karim.pdf" download>Download Resume</a>
+                            " href="files/../../../Resume of Ashfakul.pdf" download>Download Resume</a>
 
                             <div className="flex ml-12"><a className="text-secondary text-3xl mr-6
                             hover:text-main " href="#home"><AiFillGithub/></a>
