@@ -6,9 +6,10 @@ import { AiFillInstagram } from "react-icons/ai";
 import Skill from '../Skill/Skill';
 const AboutMe = () => {
     return (
-        <div className="bg-primary">
+        <div className="bg-primary py-14">
             <section className="pt-8 mx-2 md:mx-36">
                <div className="text-center text-main my-8">
+               <p className="font-sans">Get to know me</p>
                     <h1 className="text-3xl font-bold">About Me</h1>
                     <i className="about inline-block"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-main  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -35,7 +36,7 @@ const AboutMe = () => {
                            </div>
                        </div>
                        <div className=" flex mt-16">
-                             <a className="border-2 hover:delay-150 font-sans rounded-lg text-secondary md:text-xl font-bold  px-4  py-2 mr-4
+                             <a className="border-2 hover:delay-150 font-sans rounded-lg text-secondary md:text-xl font-bold  px-4  py-2 mr-8
                              hover:bg-secondary hover:text-primary 
                             " href="files/../../../Resume of Ashfakul.pdf" download>Download Resume</a>
 

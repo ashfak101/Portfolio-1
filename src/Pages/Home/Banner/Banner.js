@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="bg-primary pt-20" >
             <section className="  grid md:grid-cols-2 bg-primary sm:pt-5 md:p-6 md:mx-12 ">
                 <div className='px-4 md:py-12 md:pl-12 '>
-                    <h4 className="text-secondary text-3xl md:text-7xl font-bold md:mt-0 mt-10  ">Ashfakul Karim</h4> 
+                    <h4 className="text-secondary text-3xl md:text-7xl font-bold md:mt-10 mt-10  ">Ashfakul Karim</h4> 
                     <div className="text-secondary font-sans text-2xl md:text-3xl mt-8 ">
                         
                                   I'm a <Typical

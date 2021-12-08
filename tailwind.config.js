@@ -7,7 +7,8 @@ module.exports = {
       secondary:'#FFFFFF',
      
       main:'#efd3b3 ',
-      mainText:'#C5C4C4'
+      mainText:'#C5C4C4',
+      formColor:'#161616'
     },
     extend: {
       

@@ -11,56 +11,58 @@ const Skill = () => {
             </div>
             <section className="flex font-sans md:flex-row flex-col">
                 <div className="flex-1">
-                    <h2 className="text-secondary">Comfortable</h2>
+                    <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5">Comfortable</h2>
                     <div className='text-secondary'>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">JavaScript</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">React Js </button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">React React Router</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">Rest Api</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">React Bootstrap</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">Bootstrap</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">Tailwind Css</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">HTML</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
                              hover:bg-secondary hover:text-primary ">CSS</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">MongoDB</button>
                     </div>
                 </div>
                 <div className="flex-1">
-                    <h2 className="text-secondary ">Comfortable</h2>
+                    <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5">Familiar</h2>
                     <div className='text-secondary'>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">JavaScript</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React Js </button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React React Router</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">Rest Api</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React Bootstrap</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Node.js</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Express.js </button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Material UI</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">JSON</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">SASS</button>
                     </div>
                 </div>
                 <div className="flex-1">
-                    <h2 className="text-secondary " >Comfortable</h2>
+                    <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5" >Tools</h2>
                     <div className='text-secondary'>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">JavaScript</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React Js </button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React React Router</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">Rest Api</button>
-                        <button className="border-2 font-sans rounded text-secondary font-bold my-1 px-3  py-1 mr-2
-                             hover:bg-secondary hover:text-primary ">React Bootstrap</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Vs code</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Chrome Dev Tool</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Firebase</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Netlify</button>
+                        <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
+                             hover:bg-secondary hover:text-primary ">Heroku</button>
                     </div>
                 </div>
                

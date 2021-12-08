@@ -5,7 +5,7 @@ import './Navbar.css'
 const Navbar = ({toggle}) => {
     return (
         <>
-            <nav className=" flex justify-between items-center sm:p-2 bg-primary text-secondary  md:px-28 pt-2 font-serif"  >
+            <nav className=" flex justify-between items-center sm:p-2 bg-primary text-secondary p-3 md:px-28 pt-2 font-serif"  >
                 <div className='w-12'>
                     <img src={logo} alt="" />
                 </div>
@@ -18,8 +18,9 @@ const Navbar = ({toggle}) => {
                 <div className="   md:block hidden  cursor-default" >
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out " to="/invoices">HOME</Link>
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">ABOUT</Link>
-                        <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">CONTACT</Link>
                         <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">PROJECT</Link>
+                        <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">BLOG</Link>
+                        <Link className="mr-2 px-4 py-2 menu-item hover:text-main transition duration-500 ease-in-out" to="/expenses">CONTACT</Link>
                 </div>
             </nav>
             
