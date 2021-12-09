@@ -1,15 +1,30 @@
-import React from 'react';
-import { useForm } from "react-hook-form";
+import React, { useRef,useState } from 'react';
+
+import emailjs from 'emailjs-com';
 import { BiUserCircle } from "react-icons/bi";
 import { BiCurrentLocation } from "react-icons/bi";
 import { BiPhone } from "react-icons/bi";
 import { BiMailSend } from "react-icons/bi";
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-    // watch input value by passing the name of it
+    const form = useRef();
+    const [success,setSuccess]= useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_ms5wrwg','template_0eliij3', form.current, 'user_RHogfbetCew1SAwDRmxrb')
+          .then((result) => {
+             if(result.text){
+                 setSuccess(true)
+                 e.target.reset()
+             }
+          }, (error) => {
+              console.log(error.text);
+          });
+          
+      };
+    
     return (
-        <div className="bg-primary text-secondary">
+        <div id="contact" className="bg-primary text-secondary">
                  <div className="text-center text-main py-8">
                     <p className="font-sans">Feel free to contact me anytimes</p>
                     <h1 className="text-4xl font-bold ">Get in Touch</h1>
@@ -17,27 +32,27 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg></i>
                  </div>
-                <section className=" md:mx-36 mx-2 grid md:grid-cols-5 ">
-                    <div className="col-span-3">
+                <section className=" md:mx-36  grid md:grid-cols-5 ">
+                    <div data-aos="zoom-in-down" className="col-span-3">
                         <h2 className="text-2xl font-medium">Message Me</h2>
                    
-                        <form onSubmit={handleSubmit(onSubmit) } >
-                        {/* register your input into the hook by invoking the "register" function */}
-                        <input {...register("name")} placeholder='Name' className="  bg-primary  w-full md:w-80 my-4 md:mr-7 p-4 border-b border-main "/>
-                        
-                        {/* include validation with required or other standard HTML validation rules */}
-                        <input type="email" {...register("email", { required: true })} placeholder='Email' className=" w-full md:w-96 my-4 bg-primary p-4 border-b border-main"/>
-                        {errors.email && <span>This field is required</span>}
-                        <input {...register("subject", { required: true })} placeholder='Subject' className="w-full mb-4 bg-primary p-4 border-b border-main"/>
+                        <form ref={form} onSubmit={sendEmail} >
+                       
+                        <input type='text' name='name' placeholder='Name' className="  bg-primary  w-full md:w-80 my-4 md:mr-7 p-4 border-b border-main "/>
+                        <input type="email" name='email' placeholder='Email' className=" w-full md:w-96 my-4 bg-primary p-4 border-b border-main"/>
+
+                        <input type='subject' name='subject' placeholder='Subject' className="w-full mb-4 bg-primary p-4 border-b border-main"/>
                         {/* errors will return when field validation fails  */}
-                        {errors.subject && <span>This field is required</span>}
-                        <textarea cols="40" rows="5"{...register("message")} placeholder='Message' className=" p-4 bg-primary  w-full border-b border-main  "/>
-                        
-                        <input value="Send message" type="submit" className="border-2 rounded font-medium       text-primary          my-4 bg-main   px-6  py-1 mr-8
+                       
+                        <textarea cols="40" rows="5" name="message" placeholder='Message' className=" p-4 bg-primary  w-full border-b border-main  "/>
+                        {
+                            success && <h1 className="text-main">Send Successfully</h1>
+                        }
+                        <input value="Send message" type="submit" className="border-2 rounded font-medium       text-primary          my-4 bg-main   px-6  py-1
                         hover:bg-secondary hover:text-primary " />
                         </form>
                      </div>
-                     <div className="col-span-2 pl-8">
+                     <div data-aos="zoom-in-up" className="col-span-2 pl-8 ">
                          <h2 className="text-2xl font-medium">
                             Contact Info
                          </h2>

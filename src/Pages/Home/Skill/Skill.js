@@ -1,6 +1,8 @@
 import React from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Skill = () => {
+     AOS.init();  
     return (
         <div className="bg-primary">
             <div className="text-center text-main my-12">
@@ -9,8 +11,8 @@ const Skill = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg></i>
             </div>
-            <section className="flex font-sans md:flex-row flex-col">
-                <div className="flex-1">
+            <section className="grid md:grid-cols-3">
+                <div data-aos="fade-up-right" className="">
                     <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5">Comfortable</h2>
                     <div className='text-secondary'>
                         <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
@@ -35,7 +37,7 @@ const Skill = () => {
                              hover:bg-secondary hover:text-primary ">MongoDB</button>
                     </div>
                 </div>
-                <div className="flex-1">
+                <div data-aos="fade-up-right" className="">
                     <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5">Familiar</h2>
                     <div className='text-secondary'>
                         <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2
@@ -50,7 +52,7 @@ const Skill = () => {
                              hover:bg-secondary hover:text-primary ">SASS</button>
                     </div>
                 </div>
-                <div className="flex-1">
+                <div data-aos="fade-down-right" className="">
                     <h2 className="text-secondary text-xl inline-block uppercase border-b-2 pb-2 mb-5" >Tools</h2>
                     <div className='text-secondary'>
                         <button className="border-2 font-sans rounded text-mainText font-bold my-1 px-3  py-1 mr-2

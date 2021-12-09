@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import Dropdown from '../Shared/Dropdown/Dropdown';
+import Footer from '../Shared/Footer/Footer';
 import Navbar from '../Shared/Navbar/Navbar';
 import AboutMe from './AboutMe/AboutMe';
 import Banner from './Banner/Banner';
@@ -38,6 +39,7 @@ const Home = () => {
            <Projects/>
            <Blogs/>
            <Contact/>
+           <Footer/>
         </div>
     );
 };
